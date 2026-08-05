@@ -32,3 +32,16 @@ Vehicle ECU system.
 5. Fault code 0xFF is sent over CAN Bus
 
 ## How to Run
+python rtos_simulation.py
+
+No additional libraries required — uses Python standard library only.
+
+## Real-World Application
+This simulation mirrors the FreeRTOS task architecture used in automotive
+ECUs and autonomous vehicle systems where safety-critical tasks must preempt
+normal operations instantly on fault detection — such as in Drive-By-Wire
+braking systems.
+
+## Technologies Used
+- Python 3 (threading, queue, time, random modules)
+- FreeRTOS concepts (task priorities, queues, event flags, preemption)
